@@ -1,0 +1,77 @@
+---
+sitemap: false
+---
+
+@charset "utf-8";
+
+@import "so-simple/functions";
+@import "so-simple/variables";
+@import "so-simple/notices";
+
+/* Colors */
+$solarized-base03    : #002b36;
+$solarized-base02    : #073642;
+$solarized-base01    : #586e75;
+$solarized-base00    : #657b83;
+$solarized-base0     : #839496;
+$solarized-base1     : #93a1a1;
+$solarized-base2     : #eee8d5;
+$solarized-base3     : #fdf6e3;
+$solarized-yellow    : #b58900;
+$solarized-orange    : #cb4b16;
+$solarized-red       : #dc322f;
+$solarized-magenta   : #d33682;
+$solarized-violet    : #6c71c4;
+$solarized-blue      : #268bd2;
+$solarized-cyan      : #2aa198;
+$solarized-green     : #859900;
+
+$base-color: $solarized-base0 !default;
+$text-color: $solarized-base0 !default;
+$accent-color: $solarized-cyan !default;
+$nav-color: $solarized-base1 !default;
+$background-color: $solarized-base03 !default;
+$nav-background-color: $solarized-base02 !default;
+$code-background-color: $solarized-base03 !default;
+$border-color: $solarized-base02 !default;
+
+$primary-color: $solarized-base0 !default;
+$success-color: $solarized-green !default;
+$warning-color: $solarized-yellow !default;
+$danger-color: $solarized-red !default;
+$info-color: $solarized-blue !default;
+
+$base00: $solarized-base02;
+$base01: $solarized-red;
+$base02: $solarized-green;
+$base03: $solarized-yellow;
+$base04: $solarized-blue;
+$base05: $solarized-magenta;
+$base06: $solarized-cyan;
+$base07: $solarized-base2;
+$base08: $solarized-base03;
+$base09: $solarized-orange;
+$base0a: $solarized-base01;
+$base0b: $solarized-base00;
+$base0c: $solarized-base0;
+$base0d: $solarized-violet;
+$base0e: $solarized-base1;
+$base0f: $solarized-base3;
+
+@import "so-simple/skin";
+
+.site-logo-img {
+  border-color: $solarized-base02;
+}
+
+.ulist {
+
+  .title {
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}

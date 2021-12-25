@@ -1,0 +1,4 @@
+# Provide only the Gemfile and its lock file to the Docker context.
+*
+.*
+!Gemfile*

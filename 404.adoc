@@ -1,0 +1,6 @@
+:page-layout: search
+:page-title: "Page Not Found"
+:page-description: "Page not found. Your pixels are in another canvas."
+:page-sitemap: false
+
+Sorry, but the page you were trying to view does not exist — perhaps you can try searching for it below.

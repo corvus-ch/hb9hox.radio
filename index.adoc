@@ -1,0 +1,11 @@
+:page-layout: post
+:page-image: images/yaesu_ft-991a.jpg
+
+Tested on December 2^nd^ 2021 and got HB9HOX assigned on 21^st^ December 2021.
+Now getting my feet wet from home and portable.
+
+.Current equipment
+* Yaesu FT-991A
+* Diamond X-50N
+* Self made end fed half wave for 40m and up
+* Chameleon MPAS 2.0 with the hub extension

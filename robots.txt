@@ -1,0 +1,7 @@
+User-agent: *
+# Directories
+Disallow: /assets/
+# Files
+Disallow: /404.html
+Disallow: /CNAME
+Disallow: /search.json

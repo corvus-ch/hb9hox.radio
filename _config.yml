@@ -1,0 +1,51 @@
+# Site wide configuration
+
+title: HB9HOX
+locale: en-US
+#description: About amateur radio
+logo: images/site-logo.png
+url: https://hb9hox.radio
+
+# Theming
+theme: jekyll-theme-so-simple
+
+# Site owner
+author:
+  name: Christian Häusler
+  picture: images/christian.jpg
+  links:
+    - &email
+      title: Email
+      url: mailto:qsl@hb9hox.radio
+      icon: fas fa-envelope
+    - &qrz
+      title: QRZ
+      url: https://www.qrz.com/db/HB9HOX
+      icon: fas fa-globe
+    - &github
+      title: GitHub
+      url: http://github.com/corvus-ch
+      icon: fab fa-github
+
+# Comments
+disqus:
+  shortname: corvus-ch
+
+# Footer Links
+footer_links:
+  - *email
+  - *qrz
+  - *github
+  - title: Feed
+    url: feed.xml
+    icon: fas fa-rss
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lok
+  - Makefile
