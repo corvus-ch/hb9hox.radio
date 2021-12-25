@@ -27,10 +27,6 @@ author:
       url: http://github.com/corvus-ch
       icon: fab fa-github
 
-# Comments
-disqus:
-  shortname: corvus-ch
-
 # Footer Links
 footer_links:
   - *email
