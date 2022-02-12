@@ -32,6 +32,10 @@ defaults:
       path: ""
     values:
       lang: en
+  - scope:
+      path: "_posts/de"
+    values:
+      lang: de
 
 # Footer Links
 footer_links:
