@@ -27,6 +27,13 @@ author:
       url: http://github.com/corvus-ch
       icon: fab fa-github
 
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: en
+
 # Footer Links
 footer_links:
   - *email
