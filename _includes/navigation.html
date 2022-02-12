@@ -1,0 +1,42 @@
+{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+{% assign pages=site.pages | where_exp:"doc", "doc.ref != nil" | where:"ref", page.ref | sort: 'lang' %}
+
+{% if site.data.navigation or posts.size > 1 or pages.size > 1 %}
+  <div class="navigation-wrapper">
+    <a href="#menu-toggle" id="menu-toggle">{{ site.data.text[site.locale].menu_label | default: 'Menu' }}</a>
+    <nav id="primary-nav" class="site-nav animated drop">
+      <ul>
+        {% if site.data.navigation %}
+          {%- for link in site.data.navigation -%}
+            {%- if link.url contains '://' -%}
+              {%- assign url = link.url -%}
+            {%- else -%}
+              {%- assign url = link.url | relative_url -%}
+            {%- endif -%}
+            <li><a href="{{ url }}">{{ link.title }}</a></li>
+          {%- endfor -%}
+        {% endif %}
+
+        {% if posts.size > 1 %}
+          {% for post in posts %}
+            {% if post.id != page.id %}
+              <li>
+                <a href="{{ post.url }}" class="lang-{{ post.lang }}">{{ post.lang }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if pages.size > 1 %}
+          {% for doc in pages %}
+            {% if doc.ref and doc.url != page.url %}
+              <li>
+                <a href="{{ doc.url }}" class="lang-{{ doc.lang }}">{{ doc.lang }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+{% endif %}

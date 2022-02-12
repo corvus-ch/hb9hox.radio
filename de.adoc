@@ -1,0 +1,15 @@
+:page-layout: home
+:page-image: images/yaesu_ft-991a.jpg
+:page-lang: de
+:page-ref: about
+:page-permalink: de/index.html
+:page-last_modified_at: 2022-02-12T15:12T
+
+Prüfung bestanden am 2. Dezember 2011 und am 21. Dezember 2011 das Rufzeichen HB9HOX erhalten.
+Nun sammle ich erste Erfahrungen von zu Hause und Unterwegs.
+
+.Aktuelle Ausrüstung
+* Yaesu FT-991A
+* Diamond X-50N
+* Selbse gebauter endgespiesener Halbwellendipol für 40m und aufwärts
+* Chameleon MPAS 2.0 mit der Teactical Delta Loop Erweiterung

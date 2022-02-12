@@ -1,0 +1,36 @@
+<nav class="page-pagination" role="navigation">
+  {% for post in site.posts %}
+    {% if post.lang == page.lang %}
+      {% if prev %}
+        <a class="page-previous" href="{{ post.url | relative_url }}">
+          <h4 class="page-pagination-label">{{ site.data.text[site.locale].previous | default: 'Previous' }}</h4>
+          <span class="page-pagination-title">
+            <i class="fas fa-arrow-left"></i> {{ post.title | markdownify | strip_html }}
+          </span>
+        </a>
+      {% endif %}
+      {% assign prev = false %}
+      {% if post.id == page.id %}
+        {% assign prev = true %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% for post in site.posts reversed %}
+    {% if post.lang == page.lang %}
+      {% if next %}
+        <a class="page-next" href="{{ post.url | relative_url }}">
+          <h4 class="page-pagination-label">{{ site.data.text[site.locale].next | default: 'Next' }}</h4>
+          <span class="page-pagination-title">
+            {{ post.title | markdownify | strip_html }} <i class="fas fa-arrow-right"></i>
+          </span>
+        </a>
+        {% break %}
+      {% endif %}
+      {% assign next = false %}
+      {% if post.id == page.id %}
+        {% assign next = true %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</nav>

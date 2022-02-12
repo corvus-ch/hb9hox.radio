@@ -1,0 +1,6 @@
+{% assign posts = site.posts | where:"lang", page.lang %}
+{% assign posts_limit = page.posts_limit | default: 10 %}
+
+{%- for entry in posts limit: posts_limit -%}
+  {% include entry.html %}
+{%- endfor -%}

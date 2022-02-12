@@ -1,7 +1,6 @@
 # Site wide configuration
 
 title: HB9HOX
-locale: en-US
 #description: About amateur radio
 logo: images/site-logo.png
 url: https://hb9hox.radio
@@ -26,6 +25,17 @@ author:
       title: GitHub
       url: http://github.com/corvus-ch
       icon: fab fa-github
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: en
+  - scope:
+      path: "_posts/de"
+    values:
+      lang: de
 
 # Footer Links
 footer_links:

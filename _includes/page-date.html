@@ -1,0 +1,12 @@
+<time class="page-date dt-published" datetime="{{ page.date | date_to_xmlschema }}">
+  {%- assign site_date_format = site.date_format | default: "%B %-d, %Y" -%}
+  {%- assign date_format = site.data.text[site.locale].date_format | default: site_date_format -%}
+  {%- assign date_string = page.date | date: date_format -%}
+  {%- if site.data.text[site.locale].month %}
+    {%- assign month = 'January,February,March,April,May,June,July,August,September,October,November,December' | split:',' -%}
+    {%- for i in (0..11) -%}
+      {%- assign date_string = date_string | replace: month[i], site.data.text[site.locale].month[i] -%}
+    {%- endfor -%}
+  {%- endif -%}
+  <a class="u-url" href="{{ entry.url | relative_url }}">{{ date_string }}</a>
+</time>

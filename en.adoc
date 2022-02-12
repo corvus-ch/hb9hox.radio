@@ -1,5 +1,8 @@
-:page-layout: post
+:page-layout: home
 :page-image: images/yaesu_ft-991a.jpg
+:page-ref: about
+:page-permalink: en/index.html
+:page-last_modified_at: 2022-02-12T15:12T
 
 Tested on December 2^nd^ 2021 and got HB9HOX assigned on 21^st^ December 2021.
 Now getting my feet wet from home and portable.
