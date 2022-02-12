@@ -7,9 +7,13 @@ SHELL := bash
 
 DOCKER_IMG  ?= corvus-ch/hb9hox.radio
 DOCKER_CMD  ?= docker
-DOCKER_ARGS ?= run --rm --user="$$(id -u)" --volume="$${PWD}:/srv/jekyll" --workdir=/srv/jekyll -p 4000:4000 --env JEKYLL_ENV
+DOCKER_ARGS ?= run --rm --user="$$(id -u)" --volume="$${PWD}:/srv/jekyll" --workdir=/srv/jekyll --env JEKYLL_ENV
 
 JEKYLL_ARGS ?=
+
+.PHONY: jekyll-serve
+jekyll-serve: image
+	$(DOCKER_CMD) $(DOCKER_ARGS) -p 4000:4000 -p 35729:35729 $(DOCKER_IMG) jekyll serve --host 0.0.0.0 --livereload $(JEKYLL_ARGS)
 
 .PHONY: jekyll-%
 jekyll-%: image
