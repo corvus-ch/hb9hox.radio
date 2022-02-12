@@ -1,3 +1,16 @@
+{%- if !page.ref -%}
+  {%- assign posts=site.posts | where:"ref", page.ref | sort: 'lang' -%}
+  {%- for post in posts -%}
+    {%- if post.id != page.id -%}
+      <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign pages=site.pages | where:"ref", page.ref | sort: 'lang' -%}
+  {%- for page in pages -%}
+      <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />
+  {%- endfor -%}
+{%- endif -%}
+
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
