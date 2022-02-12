@@ -63,6 +63,20 @@ de: &DEFAULT_DE
   back_to_top: "Zurück nach Oben"
   search_placeholder_text: "Suchtext eingeben..."
   powered_by: "Unterstützt von"
+  date_format: "%d. %B %Y"
+  month:
+    - Januar
+    - Februar
+    - März
+    - April
+    - Mai
+    - Juni
+    - Juli
+    - August
+    - September
+    - Oktober
+    - November
+    - Dezember
 de-DE:
   <<: *DEFAULT_DE
 de-AU:
