@@ -33,9 +33,14 @@ defaults:
     values:
       lang: en
   - scope:
+      path: "_posts/en"
+    values:
+      permalink: /en/:categories/:year-:month-:day-:title:output_ext
+  - scope:
       path: "_posts/de"
     values:
       lang: de
+      permalink: /de/:categories/:year-:month-:day-:title:output_ext
 
 # Footer Links
 footer_links:
