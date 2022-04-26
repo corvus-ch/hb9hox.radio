@@ -8,3 +8,14 @@ According to the documentation, I had to install, configure and start several pr
 But what is each of them doing and how are they connected with each other?
 I did not find documentation that gives me a birds eye view.
 So here is my attempt to create such an overivew.
+
+* alsa
+* ardopc
+* ax25?
+* pat
+* rigctl
+
+== Sources
+
+* https://www.youtube.com/watch?v=sC79JU-HB_s
+* https://fedoraproject.org/wiki/AmateurRadio/Howto/Pat
