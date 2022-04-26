@@ -33,11 +33,11 @@ defaults:
     values:
       lang: en
   - scope:
-      path: "_posts/en"
+      path: "_*/en"
     values:
       permalink: /en/:categories/:year-:month-:day-:title:output_ext
   - scope:
-      path: "_posts/de"
+      path: "_*/de"
     values:
       lang: de
       permalink: /de/:categories/:year-:month-:day-:title:output_ext
