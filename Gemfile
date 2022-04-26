@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem "jekyll"
+gem "webrick"
 gem "jekyll-theme-so-simple"
 
 group :jekyll_plugins do
