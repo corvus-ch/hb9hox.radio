@@ -42,6 +42,17 @@ defaults:
       lang: de
       permalink: /de/:categories/:year-:month-:day-:title:output_ext
 
+asciidoctor:
+  template_dir: _templates
+  attributes:
+    icon-map:
+      note: fas fa-info-circle
+      tip: fas fa-lightbulb
+      warning: fas fa-exclamation-triangle
+      caution: fas fa-fire
+      important: fas fa-exclamation-circle
+
+
 # Footer Links
 footer_links:
   - *email

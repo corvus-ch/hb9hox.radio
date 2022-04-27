@@ -1,0 +1,7 @@
+<%#encoding:UTF-8%><div<%= @id && %( id="#{@id}") %> class="<%= ['admonitionblock',(attr :name),role].compact * ' ' %>">
+<i class="icon icon-<%= (attr 'name') %> <%= (@document.attr 'icon-map')[(attr 'name')] %> fa-pull-left fa-2x" title="<%= @caption %>"></i><%
+if title? %>
+<div class="title"><%= title %></div><%
+end %>
+<%= content %>
+</div>

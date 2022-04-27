@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem "jekyll"
+gem "tilt"
 gem "webrick"
 gem "jekyll-theme-so-simple"
 
