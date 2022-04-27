@@ -59,7 +59,7 @@ Dazu muss ich Dire Wolf nicht einmal neu starten.
 
 Dasselbe funktioniert auch für Ardop (verwende `ardopc 8515 default default`), Fldigi und Wsjtx.
 
-[HINWEIS]
+[NOTE]
 ====
 Der Wiedergabeport von WSJTX wird nur zu sehen, solange Audio ausgegeben wird.
 Verwende Tune in WSJTX, um einen konstanten Ton zu senden, womit der Wiedergabeport sichtbar wird, und den richtigen Ausgang eingestellt werden kann.
