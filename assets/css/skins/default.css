@@ -442,4 +442,18 @@ div.highlighter-rouge, figure.highlight { color: #d33682; background-color: #073
 
 .ulist p { margin-bottom: 0; }
 
+.admonitionblock { background-color: #073642; padding: 0.6rem 0.8rem; border-radius: .25rem; }
+
+.admonitionblock .icon { cursor: default; margin-top: .5rem; }
+
+.admonitionblock .icon-note { color: #268bd2; }
+
+.admonitionblock .icon-tip { color: #268bd2; }
+
+.admonitionblock .icon-warning { color: #b58900; }
+
+.admonitionblock .icon-caution { color: #b58900; }
+
+.admonitionblock .icon-important { color: #dc322f; }
+
 /*# sourceMappingURL=default.css.map */

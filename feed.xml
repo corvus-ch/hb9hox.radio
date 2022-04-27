@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://hb9hox.radio/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hb9hox.radio/" rel="alternate" type="text/html" /><updated>2022-04-26T13:23:11-05:00</updated><id>https://hb9hox.radio/feed.xml</id><title type="html">Christian HB9HOX</title><author><name>Christian HB9HOX</name></author><entry xml:lang="en"><title type="html">A better way to handle audio devices for digital modes</title><link href="https://hb9hox.radio/en/2022-04-26-digital-modes-and-audio-devices.html" rel="alternate" type="text/html" title="A better way to handle audio devices for digital modes" /><published>2022-04-26T00:00:00-05:00</published><updated>2022-04-26T00:00:00-05:00</updated><id>https://hb9hox.radio/en/digital-modes-and-audio-devices</id><content type="html" xml:base="https://hb9hox.radio/en/2022-04-26-digital-modes-and-audio-devices.html"><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://hb9hox.radio/feed.xml" rel="self" type="application/atom+xml" /><link href="https://hb9hox.radio/" rel="alternate" type="text/html" /><updated>2022-04-27T11:18:53-05:00</updated><id>https://hb9hox.radio/feed.xml</id><title type="html">Christian HB9HOX</title><author><name>Christian HB9HOX</name></author><entry xml:lang="en"><title type="html">A better way to handle audio devices for digital modes</title><link href="https://hb9hox.radio/en/2022-04-26-digital-modes-and-audio-devices.html" rel="alternate" type="text/html" title="A better way to handle audio devices for digital modes" /><published>2022-04-26T00:00:00-05:00</published><updated>2022-04-26T00:00:00-05:00</updated><id>https://hb9hox.radio/en/digital-modes-and-audio-devices</id><content type="html" xml:base="https://hb9hox.radio/en/2022-04-26-digital-modes-and-audio-devices.html"><![CDATA[<div class="paragraph">
 <p>Working with digital modes, usually, is done by paring a computer with a transceiver.
 This mostly involves some sort of audio device.
 That audio device then is used to pass audio from the transceiver to the software doing the digital stuff, and the other way around.
@@ -88,8 +88,11 @@ I do not even have to restart Dire Wolf to do so.</p>
 <div class="paragraph">
 <p>The same also works for Ardop (use <code>ardopc 8515 default default</code>), Fldigi, and Wsjtx.</p>
 </div>
+<div class="admonitionblock note">
+<i class="icon icon-note fas fa-info-circle fa-pull-left fa-2x" title=""></i>
 <div class="paragraph">
-<p>Note: The playback device of WSJTX only shows up as long as it is sending audio.
+<p>The playback device of WSJTX only shows up as long as it is sending audio.
 You can use Tune in WSJTX to send a constant tone, giving you the chance to set the correct output.
 It will remember its last setting when ever it pops up for a transmit cycle.</p>
+</div>
 </div>]]></content><author><name>Christian HB9HOX</name></author><summary type="html"><![CDATA[Working with digital modes, usually, is done by paring a computer with a transceiver. This mostly involves some sort of audio device. That audio device then is used to pass audio from the transceiver to the software doing the digital stuff, and the other way around. Documentations for various digital modes, explains to you how to use complicated steps and cryptic devices names to get the job done. But it does not have to be that way. This article gives you an overview of the Linux audio landscape and how you can use digital modes more comfortably.]]></summary></entry></feed>
