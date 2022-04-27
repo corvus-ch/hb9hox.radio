@@ -1,0 +1,67 @@
+= Vereinfacht Verwendung von Audiogeräte für digitale Modi
+:page-ref: digital-modes-and-audio-devices
+
+Das Arbeiten mit digitalen Modi erfolgt normalerweise durch Koppeln eines Computers mit einem Transceiver.
+Dies beinhaltet meistens eine Art Audiogerät, welches dann verwendet wird, um Audio vom Transceiver an die Software weiterzuleiten, die die digitalen Dinge erledigt, und umgekehrt.
+Dokumentationen zu verschiedenen digitale Modi, erklärt, wie Sie komplizierte Schritte und kryptische Gerätenamen verwenden, um das Ziel zu erreichen.
+Aber dem muss nicht so sein.
+Dieser Artikel gibt einen Überblick über die Linux-Audiolandschaft und wie digitale Modi komfortabler genutzt werden können.
+
+Angenommen, du hast zwei Lautsprecher und einen Audioplayer.
+Um Audio zu hören, muss ein Kabel zwischen einem Lautsprecher und dem Player angeschlossen werden.
+Um nun Audio auf dem anderen Lautsprecher zu hören, muss das Kabel am einen Lautsprecher herausgezogen und am anderen wieder angeschlossen werden.
+Jetzt stell dir vor, du bekommst ein paar zusätzliche Player und Lautsprecher.
+Möglicherweise sogar auch einige Geräte zum beeinflussen des Tons (Filter, Effekte), die zwischen einem Player und einem Lautsprecher zu platzieren sind.
+
+Das ständige Umstecken von Kabeln von einem Gerät zum anderen wird schnell lästig werden.
+Und mit  immer mehr Geräten wird es vermutlich chaotisch und Fehler sind schnell gemacht.
+
+Die Lösung dafür ist ein Mischpult.
+An dieses Mischpult werden dann alle Zuspieler, Filter, Effekte und Lautsprecher angeschlossen.
+Mit Tasten, Schiebe- und Drehregler, ermöglicht das Mischpult, die Lautstärke und den Fluss des Audiosignals von der Quelle zum Ziel zu steuern.
+
+Mit diesem Bild im Hinterkopf, lass uns mal ein Blick auf die gängigen Dokumentationen zu digitalen Modi anschauen.
+
+Diese sprechen davon, `aplay -l` oder `arecord -l` zu verwenden und die Karten- und Gerätenummer  des zu verwendenden Audio-Interface zu identifizieren.
+Daraus muss dann eine Hardwarekennung zusammengesetzt werden, die dann zu verwenden ist, um das Programm zu konfigurieren.
+
+Das ist wie unsere Analogie von oben, und es wird noch schlimmer.
+Wann immer zu einem anderen Gerät gewechselt werden soll, muss:
+
+* das Programm beendet werden
+* das neue Gerät identifiziert werden
+* die Konfiguration geändert werden
+* das Programm gestartet werden
+
+Auch muss sichergestellt sein, dass niemals zwei Programme parallel laufen, die dasselbe Audiogerät verwenden.
+
+Das geht aber auch einfacher.
+Wie in der obigen Analogie können wir ein Mischpult verwenden.
+So ein Mischpult ist ein Tool namens PulseAudio.
+Und in jüngerer Zeit bringt sich PipeWire in Stellung, PulseAudio zu ersetzen.
+
+Und wie funktioniert das nun?
+Ganz einfach, verwende einfach `default` als ALSA-Geräte-ID.
+Verwende dann `pavucontrol`, um die eigentlichen Eingabe- und Ausgabegeräte zu konfigurieren.
+
+In meiner Dire-Wolf-Konfiguration steht `ADEVICE default`.
+Sobald Dire Wolf gestartet ist, öffne ich PulseAudio Volume Control (`pavucontrol`) und überprüfe, ob es mit dem richtigen Gerät verbunden ist.
+Im Beispiel unten ist zu sehen, dass der Ausgang mit „PCM2903B Audio Codec Analog Stereo“ verbunden ist, meinem Yaesu FT-991A.
+
+image::/images/pavucontrol-playback.png[]
+
+Gleiches gilt für die Eingabe.
+
+image::/images/pavucontrol-recording.png[]
+
+Will ich jedoch zu meinem Lab599 Discovery TX-500 zu wechseln, dieses verbinde ich mit einer Digirig-Soundkarte, öffne ich einfach `pavucontrol` und ändere sowohl das Aufnahme- als auch das Wiedergabegerät für Dire Wolf.
+Dazu muss ich Dire Wolf nicht einmal neu starten.
+
+Dasselbe funktioniert auch für Ardop (verwende `ardopc 8515 default default`), Fldigi und Wsjtx.
+
+[HINWEIS]
+====
+Der Wiedergabeport von WSJTX wird nur zu sehen, solange Audio ausgegeben wird.
+Verwende Tune in WSJTX, um einen konstanten Ton zu senden, womit der Wiedergabeport sichtbar wird, und den richtigen Ausgang eingestellt werden kann.
+Die zuletzt gemacht Einstellung wird beibehalten, wenn der Port für einen Sendezyklus erscheint.
+====
