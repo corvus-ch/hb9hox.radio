@@ -1,9 +1,9 @@
-:page-layout: home
-:page-image: images/yaesu_ft-991a.jpg
-:page-lang: de
-:page-ref: about
-:page-permalink: de/index.html
-:page-last_modified_at: 2022-02-12T15:12T
+---
+title: Über mich
+translationKey: about
+page-image: images/yaesu_ft-991a.jpg
+---
+= Über mich
 
 Prüfung bestanden am 2. Dezember 2021 und am 21. Dezember 2021 das Rufzeichen HB9HOX erhalten.
 Nun sammle ich erste Erfahrungen von zu Hause und Unterwegs.

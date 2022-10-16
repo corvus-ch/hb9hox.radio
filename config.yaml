@@ -1,0 +1,66 @@
+baseURL: http://example.org/
+languageCode: en-us
+title: HB9HOX
+
+theme: ["github.com/Mitrichius/hugo-theme-anubis"]
+
+params:
+  author: Christian HB9HOX
+  email: qsl@hb9hox.radio
+  avatar: "/images/christian.jpg"
+  description: About amatuer radio linux, open source and open hardware.
+  style: auto
+  dateFormat: "Jan 02, 2006"
+  social:
+    - id: email
+      name: qsl@hb9hox.radio
+    - id: qrz
+      url: https://www.qrz.com/db/HB9HOX
+    - id: github
+      name: corvus-ch
+  rssAsSocialIcon: true
+  customCSS:
+    - css/vars.css
+    - css/light.css
+    - css/dark.css
+
+defaultContentLanguage: de
+defaultContentLanguageInSubdir: true
+
+languages:
+  de:
+    languageName: Deutsch
+    languageCode: de-ch
+    weight: 1
+    params:
+      description: Über Amateurfunk, Linux, Open-Source und Open-Hardware.
+      dateFormat: "02. Jan. 2006"
+    menu:
+      main:
+        - name: "Über"
+          url: "/ueber/"
+          weight: 1
+        - name: "Beiträge"
+          url: "/"
+          weight: 2
+  en: 
+    languageName: Englisch
+    weight: 5
+    menu:
+      main:
+        - name: "About"
+          url: "/about/"
+          weight: 1
+        - name: "Posts"
+          url: "/"
+          weight: 2
+
+security:
+  exec:
+    allow: ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^asciidoctor']
+
+markup:
+  asciidocExt:
+    backend: html5s
+    extensions:
+      - asciidoctor-html5s
