@@ -2,6 +2,8 @@
 title: Vereinfachte Verwendung von Audiogeräten für digitale Modi
 translationKey: digital-modes-and-audio-devices
 date: 2022-04-27
+aliases:
+  - "/de/2022-04-27-digitale-modi-und-audiogeraete.html"
 ---
 
 Das Arbeiten mit digitalen Modi erfolgt normalerweise durch Koppeln eines Computers mit einem Transceiver.
