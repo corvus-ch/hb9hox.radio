@@ -1,10 +1,14 @@
-# Jekyll
-_site/
-.jekyll-cache
-.jekyll-metadata
+### Hugo
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
 
-# Sass
-.sass-cache
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
 
-# Dependencies
-vendor
+# Temporary lock file while building
+/.hugo_build.lock

@@ -1,0 +1,23 @@
+.ulist .title {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.ulist p {
+  margin-bottom: 0;
+}
+
+.admonitionblock {
+  background-color: var(--admonition-bg-color);
+  padding: 0.5rem 0.8rem;
+  border-radius: .25rem;
+}
+
+.admonitionblock .icon {
+  cursor: default;
+  float: left;
+  height: 2em;
+  margin-top: 1rem;
+  margin-right: .5rem;
+  width: 2em;
+}

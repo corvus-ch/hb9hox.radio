@@ -1,5 +1,10 @@
-= A better way to handle audio devices for digital modes
-:page-ref: digital-modes-and-audio-devices
+---
+title: A better way to handle audio devices for digital modes
+translationKey: digital-modes-and-audio-devices
+date: 2022-04-26
+aliases:
+  - "/en/2022-04-26-digital-modes-and-audio-devices.html"
+---
 
 Working with digital modes, usually, is done by paring a computer with a transceiver.
 This mostly involves some sort of audio device.

@@ -1,0 +1,34 @@
+:root {
+  /* custom light */ 
+  --font-color: var(--solarized-base00);
+  --bg-color: var(--solarized-base3);
+  
+  --link-color: var(--solarized-cyan);
+  --link-state-color: var(--solarized-magenta);
+  --link-state-border-color: var(--solarized-base01);
+  
+  --thead-bg-color: var(--solarized-base2);
+  --table-border-color: var(--solarized-base2);
+  
+  --nav-bg-color: var(--solarized-base2);
+  --nav-link-color: var(--solarized-cyan);
+  
+  --pre-color: var(--solarized-base01);
+  --pre-bg-color: var(--solarized-base2);
+  
+  --bq-color: var(--solarized-base1);
+  --hr-color: var(--solarized-base2);
+  
+  --pagination-bg-color: var(--solarized-base2);
+  --pagination-link-color: var(--solarized-cyan);
+  
+  --post-info-color: var(--solarized-base01);
+  
+  --switcher-color: var(--solarized-base0);
+  --switcher-bg-color: var(--solarized-base03);
+  
+  --svg-color: var(--solarized-cyan);
+  --svg-state-color: var(--solarized-magenta);
+
+  --admonition-bg-color: var(--solarized-base2);
+}

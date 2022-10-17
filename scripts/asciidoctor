@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cmd=$(which -a asciidoctor | tail -n 1)
+
+exec $cmd --template-dir asciidoctor $@
