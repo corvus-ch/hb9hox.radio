@@ -13,12 +13,15 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
+
+      - name: Setup Aciidoctor
+        run: sudo gem install asciidoctor asciidoctor-pdf asciidoctor-html5s
 
       - name: Build
         run: hugo --minify --panicOnWarning --printI18nWarnings --baseURL hb9hox.radio
