@@ -31,7 +31,7 @@ jobs:
       - name: Build
         run: |
           export PATH=$GITHUB_WORKSPACE/scripts:$PATH
-          hugo --verbose --minify --printI18nWarnings --baseURL hb9hox.radio
+          hugo --minify --printI18nWarnings --baseURL //hb9hox.radio/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
