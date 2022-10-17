@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on HB9HOX</title><link>http://example.org/en/posts/</link><description>HB9HOX (Posts)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 26 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/en/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>A better way to handle audio devices for digital modes</title><link>http://example.org/en/posts/2022-04-26-digital-modes-and-audio-devices/</link><pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate><guid>http://example.org/en/posts/2022-04-26-digital-modes-and-audio-devices/</guid><description>&lt;div class="paragraph">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on HB9HOX</title><link>//hb9hox.radio/en/posts/</link><description>HB9HOX (Posts)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 26 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="//hb9hox.radio/en/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>A better way to handle audio devices for digital modes</title><link>//hb9hox.radio/en/posts/2022-04-26-digital-modes-and-audio-devices/</link><pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate><guid>//hb9hox.radio/en/posts/2022-04-26-digital-modes-and-audio-devices/</guid><description>&lt;div class="paragraph">
 &lt;p>Working with digital modes, usually, is done by paring a computer with a transceiver.
 This mostly involves some sort of audio device.
 That audio device then is used to pass audio from the transceiver to the software doing the digital stuff, and the other way around.
@@ -70,7 +70,7 @@ In the example below, you see its output is connected to &lt;code>PCM2903B Audio
 &lt;/div>
 &lt;div class="imageblock">
 &lt;div class="content">
-&lt;img src="http://example.org/images/pavucontrol-playback.png" alt="pavucontrol playback"/>
+&lt;img src="//hb9hox.radio/images/pavucontrol-playback.png" alt="pavucontrol playback"/>
 &lt;/div>
 &lt;/div>
 &lt;div class="paragraph">
@@ -78,7 +78,7 @@ In the example below, you see its output is connected to &lt;code>PCM2903B Audio
 &lt;/div>
 &lt;div class="imageblock">
 &lt;div class="content">
-&lt;img src="http://example.org/images/pavucontrol-recording.png" alt="pavucontrol recording"/>
+&lt;img src="//hb9hox.radio/images/pavucontrol-recording.png" alt="pavucontrol recording"/>
 &lt;/div>
 &lt;/div>
 &lt;div class="paragraph">
@@ -89,7 +89,7 @@ I do not even have to restart Dire Wolf to do so.&lt;/p>
 &lt;p>The same also works for Ardop (use &lt;code>ardopc 8515 default default&lt;/code>), Fldigi, and Wsjtx.&lt;/p>
 &lt;/div>
 &lt;div class="admonitionblock note">
-&lt;img class="icon icon-note" src="http://example.org/fa-icons/note.svg"/>
+&lt;img class="icon icon-note" src="//hb9hox.radio/fa-icons/note.svg"/>
 &lt;div class="paragraph">
 &lt;p>The playback device of WSJTX only shows up as long as it is sending audio.
 You can use Tune in WSJTX to send a constant tone, giving you the chance to set the correct output.
