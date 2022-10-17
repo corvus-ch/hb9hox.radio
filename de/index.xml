@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HB9HOX</title><link>hb9hox.radio/de/</link><description>HB9HOX</description><generator>Hugo -- gohugo.io</generator><language>de-ch</language><lastBuildDate>Wed, 27 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="hb9hox.radio/de/index.xml" rel="self" type="application/rss+xml"/><item><title>Vereinfachte Verwendung von Audiogeräten für digitale Modi</title><link>hb9hox.radio/de/posts/2022-04-27-digitale-modi-und-audiogeraete/</link><pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate><guid>hb9hox.radio/de/posts/2022-04-27-digitale-modi-und-audiogeraete/</guid><description>&lt;div class="paragraph">
+&lt;p>Das Arbeiten mit digitalen Modi erfolgt normalerweise durch Koppeln eines Computers mit einem Transceiver.
+Dies beinhaltet meistens eine Art Audiogerät, welches dann verwendet wird, um Audio vom Transceiver an die Software weiterzuleiten, die die digitalen Dinge erledigt, und umgekehrt.
+Dokumentationen zu verschiedenen digitale Modi, erklärt, wie Sie komplizierte Schritte und kryptische Gerätenamen verwenden, um das Ziel zu erreichen.
+Aber dem muss nicht so sein.
+Dieser Artikel gibt einen Überblick über die Linux-Audiolandschaft und wie digitale Modi komfortabler genutzt werden können.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Angenommen, du hast zwei Lautsprecher und einen Audioplayer.
+Um Audio zu hören, muss ein Kabel zwischen einem Lautsprecher und dem Player angeschlossen werden.
+Um nun Audio auf dem anderen Lautsprecher zu hören, muss das Kabel am einen Lautsprecher herausgezogen und am anderen wieder angeschlossen werden.
+Jetzt stell dir vor, du bekommst ein paar zusätzliche Player und Lautsprecher.
+Möglicherweise sogar auch einige Geräte zum beeinflussen des Tons (Filter, Effekte), die zwischen einem Player und einem Lautsprecher zu platzieren sind.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Das ständige Umstecken von Kabeln von einem Gerät zum anderen wird schnell lästig werden.
+Und mit immer mehr Geräten wird es vermutlich chaotisch und Fehler sind schnell gemacht.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Die Lösung dafür ist ein Mischpult.
+An dieses Mischpult werden dann alle Zuspieler, Filter, Effekte und Lautsprecher angeschlossen.
+Mit Tasten, Schiebe- und Drehregler, ermöglicht das Mischpult, die Lautstärke und den Fluss des Audiosignals von der Quelle zum Ziel zu steuern.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Mit diesem Bild im Hinterkopf, lass uns mal ein Blick auf die gängigen Dokumentationen zu digitalen Modi anschauen.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Diese sprechen davon, &lt;code>aplay -l&lt;/code> oder &lt;code>arecord -l&lt;/code> zu verwenden und die Karten- und Gerätenummer des zu verwendenden Audio-Interface zu identifizieren.
+Daraus muss dann eine Hardwarekennung zusammengesetzt werden, die dann zu verwenden ist, um das Programm zu konfigurieren.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Das ist wie unsere Analogie von oben, und es wird noch schlimmer.
+Wann immer zu einem anderen Gerät gewechselt werden soll, muss:&lt;/p>
+&lt;/div>
+&lt;div class="ulist">
+&lt;ul>
+&lt;li>
+&lt;p>das Programm beendet werden&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>das neue Gerät identifiziert werden&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>die Konfiguration geändert werden&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>das Programm gestartet werden&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Auch muss sichergestellt sein, dass niemals zwei Programme parallel laufen, die dasselbe Audiogerät verwenden.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Das geht aber auch einfacher.
+Wie in der obigen Analogie können wir ein Mischpult verwenden.
+So ein Mischpult ist ein Tool namens PulseAudio.
+Und in jüngerer Zeit bringt sich PipeWire in Stellung, PulseAudio zu ersetzen.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Und wie funktioniert das nun?
+Ganz einfach, verwende einfach &lt;code>default&lt;/code> als ALSA-Geräte-ID.
+Verwende dann &lt;code>pavucontrol&lt;/code>, um die eigentlichen Eingabe- und Ausgabegeräte zu konfigurieren.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>In meiner Dire-Wolf-Konfiguration steht &lt;code>ADEVICE default&lt;/code>.
+Sobald Dire Wolf gestartet ist, öffne ich PulseAudio Volume Control (&lt;code>pavucontrol&lt;/code>) und überprüfe, ob es mit dem richtigen Gerät verbunden ist.
+Im Beispiel unten ist zu sehen, dass der Ausgang mit „PCM2903B Audio Codec Analog Stereo“ verbunden ist, meinem Yaesu FT-991A.&lt;/p>
+&lt;/div>
+&lt;div class="imageblock">
+&lt;div class="content">
+&lt;img src="hb9hox.radio/images/pavucontrol-playback.png" alt="pavucontrol playback"/>
+&lt;/div>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Gleiches gilt für die Eingabe.&lt;/p>
+&lt;/div>
+&lt;div class="imageblock">
+&lt;div class="content">
+&lt;img src="hb9hox.radio/images/pavucontrol-recording.png" alt="pavucontrol recording"/>
+&lt;/div>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Will ich jedoch zu meinem Lab599 Discovery TX-500 zu wechseln, dieses verbinde ich mit einer Digirig-Soundkarte, öffne ich einfach &lt;code>pavucontrol&lt;/code> und ändere sowohl das Aufnahme- als auch das Wiedergabegerät für Dire Wolf.
+Dazu muss ich Dire Wolf nicht einmal neu starten.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Dasselbe funktioniert auch für Ardop (verwende &lt;code>ardopc 8515 default default&lt;/code>), Fldigi und Wsjtx.&lt;/p>
+&lt;/div>
+&lt;div class="admonitionblock note">
+&lt;img class="icon icon-note" src="hb9hox.radio/fa-icons/note.svg"/>
+&lt;div class="paragraph">
+&lt;p>Der Wiedergabeport von WSJTX wird nur zu sehen, solange Audio ausgegeben wird.
+Verwende Tune in WSJTX, um einen konstanten Ton zu senden, womit der Wiedergabeport sichtbar wird, und den richtigen Ausgang eingestellt werden kann.
+Die zuletzt gemacht Einstellung wird beibehalten, wenn der Port für einen Sendezyklus erscheint.&lt;/p>
+&lt;/div>
+&lt;/div></description></item><item><title>Über mich</title><link>hb9hox.radio/de/ueber/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>hb9hox.radio/de/ueber/</guid><description>&lt;div class="paragraph">
+&lt;p>Prüfung bestanden am 2. Dezember 2021 und am 21. Dezember 2021 das Rufzeichen HB9HOX erhalten.
+Nun sammle ich erste Erfahrungen von zu Hause und Unterwegs.&lt;/p>
+&lt;/div>
+&lt;div class="ulist">
+&lt;div class="title">Aktuelle Ausrüstung&lt;/div>
+&lt;ul>
+&lt;li>
+&lt;p>Yaesu FT-991A&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Diamond X-50N&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Selbse gebauter endgespiesener Halbwellendipol für 40m und aufwärts&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Chameleon MPAS 2.0 mit der Teactical Delta Loop Erweiterung&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div></description></item></channel></rss>

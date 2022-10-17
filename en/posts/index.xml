@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on HB9HOX</title><link>hb9hox.radio/en/posts/</link><description>HB9HOX (Posts)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 26 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="hb9hox.radio/en/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>A better way to handle audio devices for digital modes</title><link>hb9hox.radio/en/posts/2022-04-26-digital-modes-and-audio-devices/</link><pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate><guid>hb9hox.radio/en/posts/2022-04-26-digital-modes-and-audio-devices/</guid><description>&lt;div class="paragraph">
+&lt;p>Working with digital modes, usually, is done by paring a computer with a transceiver.
+This mostly involves some sort of audio device.
+That audio device then is used to pass audio from the transceiver to the software doing the digital stuff, and the other way around.
+Documentations for various digital modes, explains to you how to use complicated steps and cryptic devices names to get the job done.
+But it does not have to be that way.
+This article gives you an overview of the Linux audio landscape and how you can use digital modes more comfortably.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Consider you have two loudspeakers and one audio player.
+To listen to that audio, you have to plug in a cable between one loudspeaker and the audio player.
+When ever you want to hear that audio on the other loudspeaker, you pull out the cable and plug it in to that other loudspeaker.
+Now imagine, you get some more players and some more loudspeakers.
+You might even get some devices to change the audio (filters, effects) which you have to place between a player and a loudspeaker.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Constantly having to move cables from one device to another can get annoying pretty fast.
+And with more and more devices involved, it is likely to get chaotic and errors are easily made.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>The solution for this would be, to get yourself a mixing console in between.
+You will then connect all players, filters, effects and loudspeakers to that mixing console.
+The mixing console then allows you to use buttons, faders and knobs to control the flow and volume of the audio signal from its source to its destination.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>With that in mind, let us have a look at what most documentation related to digital modes tells you to do.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>You are taught to use &lt;code>aplay -l&lt;/code> or &lt;code>arecord -l&lt;/code> and identify the card and device number for the audio interface you intend to use.
+You then have to build yourself a hardware identifier, you then have to use to configure your program.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>This is like our analogy from above, and it gets even worse.
+When ever you want to switch to another device, you have to:&lt;/p>
+&lt;/div>
+&lt;div class="ulist">
+&lt;ul>
+&lt;li>
+&lt;p>Stop program&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Identify the other device&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Change configuration&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Start program&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>You also have to ensure, you never start two programs in parallel configured to use the same audio device.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>But there is a better way to do this.
+Like with in the above analogy, we can use a mixing console in between.
+That mixing console is a tool called PulseAudio.
+And more recently, PipeWire brings itself into position to replace PulseAudio.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>So how does this work, then?
+Easy, just use &lt;code>default&lt;/code> for your ALSA device IDs.
+Then use &lt;code>pavucontrol&lt;/code> to configure the actual input and output devices.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>In my Dire Wolf configuration, I have &lt;code>ADEVICE default&lt;/code>.
+Once Dire Wolf is running, I open PulseAudio Volume Control (&lt;code>pavucontrol&lt;/code>) and check if it is linked to the correct device.
+In the example below, you see its output is connected to &lt;code>PCM2903B Audio Codec Analog Stereo&lt;/code> which is my Yaesu FT-991A.&lt;/p>
+&lt;/div>
+&lt;div class="imageblock">
+&lt;div class="content">
+&lt;img src="hb9hox.radio/images/pavucontrol-playback.png" alt="pavucontrol playback"/>
+&lt;/div>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>The same goes for the input.&lt;/p>
+&lt;/div>
+&lt;div class="imageblock">
+&lt;div class="content">
+&lt;img src="hb9hox.radio/images/pavucontrol-recording.png" alt="pavucontrol recording"/>
+&lt;/div>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Should I choose to switch to my Lab599 Discovery TX-500 which I connect using a Digirig sound card, I just open &lt;code>pavucontrol&lt;/code> and change both, the capture and playback device for Dire Wolf.
+I do not even have to restart Dire Wolf to do so.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>The same also works for Ardop (use &lt;code>ardopc 8515 default default&lt;/code>), Fldigi, and Wsjtx.&lt;/p>
+&lt;/div>
+&lt;div class="admonitionblock note">
+&lt;img class="icon icon-note" src="hb9hox.radio/fa-icons/note.svg"/>
+&lt;div class="paragraph">
+&lt;p>The playback device of WSJTX only shows up as long as it is sending audio.
+You can use Tune in WSJTX to send a constant tone, giving you the chance to set the correct output.
+It will remember its last setting when ever it pops up for a transmit cycle.&lt;/p>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
