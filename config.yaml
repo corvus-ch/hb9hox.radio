@@ -23,6 +23,7 @@ params:
     - css/vars.css
     - css/light.css
     - css/dark.css
+    - css/asciidoc.css
 
 defaultContentLanguage: de
 defaultContentLanguageInSubdir: true
@@ -61,6 +62,4 @@ security:
 
 markup:
   asciidocExt:
-    backend: html5s
-    extensions:
-      - asciidoctor-html5s
+    backend: html5

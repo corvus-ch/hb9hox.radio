@@ -29,4 +29,6 @@
   
   --svg-color: var(--solarized-cyan);
   --svg-state-color: var(--solarized-magenta);
+
+  --admonition-bg-color: var(--solarized-base02);
 }

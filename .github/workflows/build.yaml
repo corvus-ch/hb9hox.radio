@@ -20,11 +20,18 @@ jobs:
         with:
           hugo-version: 'latest'
 
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+
       - name: Setup Aciidoctor
-        run: sudo gem install asciidoctor asciidoctor-pdf asciidoctor-html5s
+        run: gem install asciidoctor tilt
 
       - name: Build
-        run: hugo --minify --panicOnWarning --printI18nWarnings --baseURL hb9hox.radio
+        run: |
+          export PATH=$GITHUB_WORKSPACE/scripts:$PATH
+          hugo --verbose --minify --printI18nWarnings --baseURL hb9hox.radio
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
