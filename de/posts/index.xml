@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on HB9HOX</title><link>hb9hox.radio/de/posts/</link><description>HB9HOX (Posts)</description><generator>Hugo -- gohugo.io</generator><language>de-ch</language><lastBuildDate>Wed, 27 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="hb9hox.radio/de/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Vereinfachte Verwendung von Audiogeräten für digitale Modi</title><link>hb9hox.radio/de/posts/2022-04-27-digitale-modi-und-audiogeraete/</link><pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate><guid>hb9hox.radio/de/posts/2022-04-27-digitale-modi-und-audiogeraete/</guid><description>&lt;div class="paragraph">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on HB9HOX</title><link>http://example.org/de/posts/</link><description>HB9HOX (Posts)</description><generator>Hugo -- gohugo.io</generator><language>de-ch</language><lastBuildDate>Wed, 27 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://example.org/de/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Vereinfachte Verwendung von Audiogeräten für digitale Modi</title><link>http://example.org/de/posts/2022-04-27-digitale-modi-und-audiogeraete/</link><pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate><guid>http://example.org/de/posts/2022-04-27-digitale-modi-und-audiogeraete/</guid><description>&lt;div class="paragraph">
 &lt;p>Das Arbeiten mit digitalen Modi erfolgt normalerweise durch Koppeln eines Computers mit einem Transceiver.
 Dies beinhaltet meistens eine Art Audiogerät, welches dann verwendet wird, um Audio vom Transceiver an die Software weiterzuleiten, die die digitalen Dinge erledigt, und umgekehrt.
 Dokumentationen zu verschiedenen digitale Modi, erklärt, wie Sie komplizierte Schritte und kryptische Gerätenamen verwenden, um das Ziel zu erreichen.
@@ -69,7 +69,7 @@ Im Beispiel unten ist zu sehen, dass der Ausgang mit „PCM2903B Audio Codec Ana
 &lt;/div>
 &lt;div class="imageblock">
 &lt;div class="content">
-&lt;img src="hb9hox.radio/images/pavucontrol-playback.png" alt="pavucontrol playback"/>
+&lt;img src="http://example.org/images/pavucontrol-playback.png" alt="pavucontrol playback"/>
 &lt;/div>
 &lt;/div>
 &lt;div class="paragraph">
@@ -77,7 +77,7 @@ Im Beispiel unten ist zu sehen, dass der Ausgang mit „PCM2903B Audio Codec Ana
 &lt;/div>
 &lt;div class="imageblock">
 &lt;div class="content">
-&lt;img src="hb9hox.radio/images/pavucontrol-recording.png" alt="pavucontrol recording"/>
+&lt;img src="http://example.org/images/pavucontrol-recording.png" alt="pavucontrol recording"/>
 &lt;/div>
 &lt;/div>
 &lt;div class="paragraph">
@@ -88,7 +88,7 @@ Dazu muss ich Dire Wolf nicht einmal neu starten.&lt;/p>
 &lt;p>Dasselbe funktioniert auch für Ardop (verwende &lt;code>ardopc 8515 default default&lt;/code>), Fldigi und Wsjtx.&lt;/p>
 &lt;/div>
 &lt;div class="admonitionblock note">
-&lt;img class="icon icon-note" src="hb9hox.radio/fa-icons/note.svg"/>
+&lt;img class="icon icon-note" src="http://example.org/fa-icons/note.svg"/>
 &lt;div class="paragraph">
 &lt;p>Der Wiedergabeport von WSJTX wird nur zu sehen, solange Audio ausgegeben wird.
 Verwende Tune in WSJTX, um einen konstanten Ton zu senden, womit der Wiedergabeport sichtbar wird, und den richtigen Ausgang eingestellt werden kann.
