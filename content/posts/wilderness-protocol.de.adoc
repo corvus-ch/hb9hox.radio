@@ -1,0 +1,50 @@
+---
+title: Wildnisprotokoll
+slug: wildnisprotokoll
+---
+= Das Wildnisprotokoll
+
+Das Wildnisprotokoll bietet Stationen, die sich ausserhalb der Reichweite von Repeatern befinden, die Möglichkeit, gehört zu werden, wenn es am notwendigsten ist!
+Es wurde erstmals 1994 von William Alsup, N6XMW, vorgeschlagen (<<alsup1994, Alsup 1994>>):
+
+Alle Wanderer, die mit einem Handfunkgerät ausgestattet sind, sollten täglich um 10:00 Uhr, 13:00 Uhr und 16:00 Uhr fünf Minuten lang die nationale Simplex-Ruffrequenz 146.52 MHz überwachen.
+Jeder Funkamateur, der sich bereits in Reichweite eines Repeaters befindet, benötigt das Protokoll nicht, aber er könnte eine Nachricht von einem Amateur ausserhalb der Reichweite von einem Repeater weiterleiten.
+
+Als Alternative wurden nationale Simplexfrequenzen anderer VHF/UHF-Bänder vorgeschlagen.
+Funkamateure, mit reichlich Leistung, können auch jede Stunde überwachen.
+Optional können Funkamateure auch ihre Präsenz ankündigen.
+So wissen andere, wer in der Nähe ist.
+
+In einer Erinnerung in der  QST Ausgabe vom August 1995 (<<alsup1995, Alsup 1995)>> wurden die Zeiten auf alle drei Stunden von 7 bis 19 Uhr erweitert.
+
+Die neueste Inkarnation zu diesem Thema wurde von Rick Palm, K1CE, im August 2021 (<<palm2021, Palm 2021>>) geschrieben.
+Dies deutet darauf hin, dass das Thema immer noch aktuell ist.
+Aber Rick verweist auch auf https://de.wikipedia.org/wiki/Notfunkbake[Notfunkbaken] als weitere Option.
+
+Also, was ist mit der Schweiz?
+Unsere Handyabdeckung ist aussergewöhnlich dicht und du hast auch in abgelegenen Bergregionen ein Signal.
+Dennoch gibt es noch einige blinde Flecken.
+Allerdings würde ich nicht auf das Wildnisprotokoll setzen.
+Das Wildnisprotokoll ist meines Wissens hierzulande nicht bekannt.
+Und wenn du dich in einem Gebiet ohne Mobilfunkempfang befinden, bist du höchstwahrscheinlich von Bergen umgeben.
+Mit UKW kommst du hier auch nicht weit und du müsstest auf höhere Lagen aufsteigen.
+Dort oben wirst du dann wahrscheinlich auch wieder Handyempfang haben.
+
+Hast du das Bedürfnis mehr Sicherheit zu benötigen, schau dir mal die satellitengestützten Notfunkbaken an.
+Das Garmin inReach ist hier eine beliebte Wahl.
+Vielleicht möchtest du auch einen Blick auf das https://www.rega.ch/de/unsere-missionen/standorte-und-infrastruktur/notfunk[Rega-Notfallfunkgerät] werfen.
+Dies ist immer noch ein UKW-Funkgerät.
+Ein Netz von Relais ist jedoch strategisch über die ganze Schweiz{e}footnote:[mit Ausnahme des Wallis] verteilt und 24 Stunden am Tag, sieben Tage die Woche von Profis überwacht.
+
+Bring aber trotzdem immer dein Handfunkgerät mit.
+Es ist unser Hobby, und jeder Vorwand unsere Frequenzprivilegien zu nutzen, soll gelten.
+Funkbetrieb, weg von unserer heimischen Station, bringt neue Herausforderungen und Freuden mit sich.
+Und wenn du schon auf einem Berggipfel bist, dann mach doch auch gleich eine https://hb9sota.ch/en/welcome/[Summits on the Air (SOTA)]-Aktivierung.
+
+[bibliography]
+== Quellen
+
+* [[[alsup1994]]] Alsup, William N6XMW. A Wilderness VHF FM Protocol. QST, February 1994, pp. 100.
+* [[[alsup1995]]] Alsup, William N6XMW. Wilderness VHF Protocol Reminder. QST, August 1995, pp. 101.
+* [[[palm2021]]] Palm, Rick K1CE. Wilderness Emergency Communications Protocols. QST, March 2021, pp. 70.
+* Notfunkbake, Wikipedia. https://de.wikipedia.org/wiki/Notfunkbake (Zugriff: 24.10.2022).
