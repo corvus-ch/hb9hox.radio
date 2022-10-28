@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HB9HOX</title><link>//hb9hox.radio/de/</link><description>HB9HOX</description><generator>Hugo -- gohugo.io</generator><language>de-ch</language><lastBuildDate>Wed, 27 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="//hb9hox.radio/de/index.xml" rel="self" type="application/rss+xml"/><item><title>Vereinfachte Verwendung von Audiogeräten für digitale Modi</title><link>//hb9hox.radio/de/posts/2022-04-27-digitale-modi-und-audiogeraete/</link><pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate><guid>//hb9hox.radio/de/posts/2022-04-27-digitale-modi-und-audiogeraete/</guid><description>&lt;div class="paragraph">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>HB9HOX</title><link>//hb9hox.radio/de/</link><description>HB9HOX</description><generator>Hugo -- gohugo.io</generator><language>de-ch</language><lastBuildDate>Fri, 28 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="//hb9hox.radio/de/index.xml" rel="self" type="application/rss+xml"/><item><title>Das Wilderness-Protokoll</title><link>//hb9hox.radio/de/posts/wilderness-protocoll/</link><pubDate>Fri, 28 Oct 2022 00:00:00 +0000</pubDate><guid>//hb9hox.radio/de/posts/wilderness-protocoll/</guid><description>&lt;div id="preamble">
+&lt;div class="sectionbody">
+&lt;div class="paragraph">
+&lt;p>Das Wilderness-Protokoll bietet Stationen, welche sich ausserhalb der Reichweite von Repeatern befinden, die Möglichkeit, gehört zu werden, wenn es am notwendigsten ist!
+Es wurde erstmals 1994 von William Alsup, N6XMW, vorgeschlagen (&lt;a href="#alsup1994">Alsup 1994&lt;/a>):&lt;/p>
+&lt;/div>
+&lt;div class="quoteblock">
+&lt;blockquote>
+&lt;div class="paragraph">
+&lt;p>Alle Wanderer, die mit einem Handfunkgerät ausgestattet sind, sollten täglich um 10:00 Uhr, 13:00 Uhr und 16:00 Uhr fünf Minuten lang die nationale Simplex-Ruffrequenz 146.52 MHz&lt;sup class="footnote">[&lt;a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1&lt;/a>]&lt;/sup> überwachen.
+Jeder Funkamateur, der sich bereits in Reichweite eines Repeaters befindet, benötigt das Protokoll nicht, aber er könnte eine Nachricht von einem Amateur ausserhalb der Reichweite von einem Repeater weiterleiten.&lt;/p>
+&lt;/div>
+&lt;/blockquote>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Als Alternative wurden Simplexfrequenzen anderer VHF/UHF-Bänder vorgeschlagen.
+Funkamateure, mit reichlich Energiereserven, können auch jede Stunde überwachen.
+Optional können Funkamateure auch ihre Präsenz ankündigen.
+So wissen andere, wer in der Nähe ist.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>QST Ausgabe vom August 1995 griff Alsup das Thema nochmals auf (&lt;a href="#alsup1995">Alsup 1995)&lt;/a>.
+Zudem wurden die Zeiten auf alle drei Stunden von 7 bis 19 Uhr erweitert.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Der neuste Artikel zum Thema wurde von Rick Palm, K1CE, im August 2021 (&lt;a href="#palm2021">Palm 2021&lt;/a>) geschrieben.
+Dies deutet darauf hin, dass das Thema immer noch aktuell ist.
+Dies ist auch nicht verwunderlich.
+Die Vereinigten Staaten sind ein Land mit weitreichenden unbewohnten Landstrichen.
+Diese unbewohnten Flächen mit Mobilfunk abzudecken, ist schlichtweg nicht wirtschaftlich.
+Doch ist es genau diese Wildnis, welche einen Reiz auf Abenteurer ausübt.
+Womit wir dann wieder beim Wilderness-Protokoll sind.&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="sect1">
+&lt;h2 id="_und_in_der_schweiz">Und in der Schweiz?&lt;/h2>
+&lt;div class="sectionbody">
+&lt;div class="paragraph">
+&lt;p>Unsere Mobilfunkabdeckung ist aussergewöhnlich dicht und du hast auch in abgelegenen Bergregionen meist noch ein Signal.
+Dennoch gibt es auch hierzulande blinde Flecken.
+Dies sind vorwiegend Täler, wo du auf mehreren Seiten von Bergen umgeben bist.
+Mit UKW kommst du hier auch nicht weit.
+Für eine erfolgreiche Verbindung musst du auf höhere Lagen aufsteigen.
+Dort oben wirst du dann wahrscheinlich auch wieder Handyempfang haben.&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Das Wilderness-Protokoll ist meines Wissens hierzulande kaum oder überhaupt nicht bekannt.
+Dies ist jedoch das klassische &lt;a href="https://de.wikipedia.org/wiki/Henne-Ei-Problem">Henne-Ei-Problem&lt;/a>.
+Niemand rechnet damit, dass zu den Zeiten jemand aktiv die Frequenzen überwacht.
+Und niemand überwacht die Frequenzen, weil …&lt;/p>
+&lt;/div>
+&lt;div class="paragraph">
+&lt;p>Amateurfunk ist für mich nicht das primäre Mittel, um im Notfall Hilfe zu rufen.
+Auf Wanderungen und Bergtouren ist mein Handfunkgerät jedoch immer dabei.
+Es ist mein Hobby und jeder Vorwand unsere Frequenzprivilegien zu nutzen, soll gelten.
+Zudem bringt der Funkbetrieb, weg von unserer heimischen Station, neue Herausforderungen und Freuden mit sich.
+Und auf dem Berggipfel angekommen, nehme ich mir auch die Zeit für eine &lt;a href="https://hb9sota.ch/en/welcome/">Summits on the Air (SOTA)&lt;/a>-Aktivierung.
+Und wer weiss, vielleicht kommt auch mal der Momment, in dem mir Amateurfunk hilft leben zu retten.
+Eine lesenswerte Geschichte hierzu findet sich in der Januarasugabe 2012 vom HB-Radio (&lt;a href="#gruenenfelder2012">Grünenfelder 2012&lt;/a>).&lt;/p>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div class="sect1">
+&lt;h2 id="_quellen">Quellen&lt;/h2>
+&lt;div class="sectionbody">
+&lt;div class="ulist bibliography">
+&lt;ul class="bibliography">
+&lt;li>
+&lt;p>&lt;a id="alsup1994">&lt;/a>[alsup1994] Alsup, William N6XMW. A Wilderness VHF FM Protocol. QST, February 1994, pp. 100.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a id="alsup1995">&lt;/a>[alsup1995] Alsup, William N6XMW. Wilderness VHF Protocol Reminder. QST, August 1995, pp. 101.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a id="palm2021">&lt;/a>[palm2021] Palm, Rick K1CE. Wilderness Emergency Communications Protocols. QST, March 2021, pp. 70.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a id="gruenenfelder2012">&lt;/a>[gruenenfelder2012] Grünenfelder, Thedy HB9ERV, «Hier isch de Urs usem Gaschteretal», HB Radio, Januar 2012, pp. 20.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;div id="footnotes">
+&lt;hr/>
+&lt;div class="footnote" id="_footnotedef_1">
+&lt;a href="#_footnoteref_1">1&lt;/a>. Der QST Artikel adressiert Funkamateure in den USA (IARU Region 2). In der Schweiz (IARU Region 1) ist die Ruffrequenz 145.500 MHz.
+&lt;/div>
+&lt;/div></description></item><item><title>Vereinfachte Verwendung von Audiogeräten für digitale Modi</title><link>//hb9hox.radio/de/posts/2022-04-27-digitale-modi-und-audiogeraete/</link><pubDate>Wed, 27 Apr 2022 00:00:00 +0000</pubDate><guid>//hb9hox.radio/de/posts/2022-04-27-digitale-modi-und-audiogeraete/</guid><description>&lt;div class="paragraph">
 &lt;p>Das Arbeiten mit digitalen Modi erfolgt normalerweise durch Koppeln eines Computers mit einem Transceiver.
 Dies beinhaltet meistens eine Art Audiogerät, welches dann verwendet wird, um Audio vom Transceiver an die Software weiterzuleiten, die die digitalen Dinge erledigt, und umgekehrt.
 Dokumentationen zu verschiedenen digitale Modi, erklärt, wie Sie komplizierte Schritte und kryptische Gerätenamen verwenden, um das Ziel zu erreichen.
