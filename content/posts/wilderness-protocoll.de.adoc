@@ -1,0 +1,61 @@
+---
+title: Das Wilderness-Protokoll
+publishDate: 2022-10-28
+---
+= Das Wilderness-Protokoll
+
+Das Wilderness-Protokoll bietet Stationen, welche sich ausserhalb der Reichweite von Repeatern befinden, die Möglichkeit, gehört zu werden, wenn es am notwendigsten ist!
+Es wurde erstmals 1994 von William Alsup, N6XMW, vorgeschlagen (<<alsup1994, Alsup 1994>>):
+
+[quote]
+____
+Alle Wanderer, die mit einem Handfunkgerät ausgestattet sind, sollten täglich um 10:00 Uhr, 13:00 Uhr und 16:00 Uhr fünf Minuten lang die nationale Simplex-Ruffrequenz 146.52 MHz{empty}footnote:[Der QST Artikel adressiert Funkamateure in den USA (IARU Region 2). In der Schweiz (IARU Region 1) ist die Ruffrequenz 145.500 MHz.] überwachen.
+Jeder Funkamateur, der sich bereits in Reichweite eines Repeaters befindet, benötigt das Protokoll nicht, aber er könnte eine Nachricht von einem Amateur ausserhalb der Reichweite von einem Repeater weiterleiten.
+____
+
+Als Alternative wurden Simplexfrequenzen anderer VHF/UHF-Bänder vorgeschlagen.
+Funkamateure, mit reichlich Energiereserven, können auch jede Stunde überwachen.
+Optional können Funkamateure auch ihre Präsenz ankündigen.
+So wissen andere, wer in der Nähe ist.
+
+QST Ausgabe vom August 1995 griff Alsup das Thema nochmals auf (<<alsup1995, Alsup 1995)>>.
+Zudem wurden die Zeiten auf alle drei Stunden von 7 bis 19 Uhr erweitert.
+
+Der neuste Artikel zum Thema wurde von Rick Palm, K1CE, im August 2021 (<<palm2021, Palm 2021>>) geschrieben.
+Dies deutet darauf hin, dass das Thema immer noch aktuell ist.
+Dies ist auch nicht verwunderlich.
+Die Vereinigten Staaten sind ein Land mit weitreichenden unbewohnten Landstrichen.
+Diese unbewohnten Flächen mit Mobilfunk abzudecken, ist schlichtweg nicht wirtschaftlich.
+Doch ist es genau diese Wildnis, welche einen Reiz auf Abenteurer ausübt.
+Womit wir dann wieder beim Wilderness-Protokoll sind.
+
+
+== Und in der Schweiz?
+
+Unsere Mobilfunkabdeckung ist aussergewöhnlich dicht und du hast auch in abgelegenen Bergregionen meist noch ein Signal.
+Dennoch gibt es auch hierzulande blinde Flecken.
+Dies sind vorwiegend Täler, wo du auf mehreren Seiten von Bergen umgeben bist.
+Mit UKW kommst du hier auch nicht weit.
+Für eine erfolgreiche Verbindung musst du auf höhere Lagen aufsteigen.
+Dort oben wirst du dann wahrscheinlich auch wieder Handyempfang haben.
+
+Das Wilderness-Protokoll ist meines Wissens hierzulande kaum oder überhaupt nicht bekannt.
+Dies ist jedoch das klassische https://de.wikipedia.org/wiki/Henne-Ei-Problem[Henne-Ei-Problem].
+Niemand rechnet damit, dass zu den Zeiten jemand aktiv die Frequenzen überwacht.
+Und niemand überwacht die Frequenzen, weil …
+
+Amateurfunk ist für mich nicht das primäre Mittel, um im Notfall Hilfe zu rufen.
+Auf Wanderungen und Bergtouren ist mein Handfunkgerät jedoch immer dabei.
+Es ist mein Hobby und jeder Vorwand unsere Frequenzprivilegien zu nutzen, soll gelten.
+Zudem bringt der Funkbetrieb, weg von unserer heimischen Station, neue Herausforderungen und Freuden mit sich.
+Und auf dem Berggipfel angekommen, nehme ich mir auch die Zeit für eine https://hb9sota.ch/en/welcome/[Summits on the Air (SOTA)]-Aktivierung.
+Und wer weiss, vielleicht kommt auch mal der Momment, in dem mir Amateurfunk hilft leben zu retten.
+Eine lesenswerte Geschichte hierzu findet sich in der Januarasugabe 2012 vom HB-Radio (<<gruenenfelder2012, Grünenfelder 2012>>).
+
+[bibliography]
+== Quellen
+
+* [[[alsup1994]]] Alsup, William N6XMW. A Wilderness VHF FM Protocol. QST, February 1994, pp. 100.
+* [[[alsup1995]]] Alsup, William N6XMW. Wilderness VHF Protocol Reminder. QST, August 1995, pp. 101.
+* [[[palm2021]]] Palm, Rick K1CE. Wilderness Emergency Communications Protocols. QST, March 2021, pp. 70.
+* [[[gruenenfelder2012]]] Grünenfelder, Thedy HB9ERV, «Hier isch de Urs usem Gaschteretal», HB Radio, Januar 2012, pp. 20.

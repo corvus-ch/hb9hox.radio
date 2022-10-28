@@ -26,7 +26,7 @@ jobs:
           ruby-version: 3.1
 
       - name: Setup Aciidoctor
-        run: gem install asciidoctor tilt
+        run: gem install asciidoctor tilt concurrent-ruby
 
       - name: Build
         run: |
