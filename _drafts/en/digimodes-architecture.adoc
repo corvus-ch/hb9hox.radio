@@ -1,0 +1,21 @@
+= Digimodes: an architectural overview
+:page-ref: digimodes-architecture
+
+Recently I tried to setup https://getpat.io/[Pat Winlink] together with Ardop.
+It did not work.
+As I started to investigate what I did wrong, I realised, I am missing a lot of knowlege.
+According to the documentation, I had to install, configure and start several programms.
+But what is each of them doing and how are they connected with each other?
+I did not find documentation that gives me a birds eye view.
+So here is my attempt to create such an overivew.
+
+* alsa
+* ardopc
+* ax25?
+* pat
+* rigctl
+
+== Sources
+
+* https://www.youtube.com/watch?v=sC79JU-HB_s
+* https://fedoraproject.org/wiki/AmateurRadio/Howto/Pat
