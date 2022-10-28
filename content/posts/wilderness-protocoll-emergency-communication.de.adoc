@@ -1,0 +1,21 @@
+---
+title: Das Wilderness Protokoll im Notfunk
+---
+
+* Wiel diskussion um Blakout und Notfunk
+* Vorbereitete gruppen (ideal) vs. unkoordinierter ad-hoc notfunk (Realität)
+* Stromversorgung limitert
+* Eigene probleme
+* Mensch braucht auch mal pause
+* 24/7 Funkbetrieb keine option
+* Inspiration Wilderness-Protokoll als inspiration
+* Zeiten: 07:00, 10:00, 13:00, 16:00, 19:00 und 22:00
+
+Quellen:
+
+* https://co-cern.org/wp-content/uploads/2019/10/CERN-Wilderness-protocol.pdf
+* https://cvara.net/public-service/wilderness-protocol/
+* https://ovatvc.org/the-wilderness-protocol/
+* https://stxd14ares.org/training/eme-112/
+* https://tcares.net/the-wilderness-protocol/
+* https://www.mdarc.org/activities/emergency-communications/wilderness-protocol
