@@ -1,0 +1,51 @@
+---
+title: Wilderness Protocol
+---
+= The Wilderness Protocol
+
+The Wilderness Protocol is an initiative to offer stations outside repeater range an opportunity to be heard when it is needed the most!
+It was first proposed by William Alsup, N6XMW in 1994:
+
+[quote, William Alsup N6XMW, A Wilderness VHF FM Protocol - QST February 1994]
+____
+All hand-held transceiver-equipped hikers should monitor the national simplex calling frequency, 146.52 MHz, at 10 AM, 1 PM and 4 PM daily, for five minutes.
+Any ham already in range of a repeater won't need the protocol, but he could relay […] a message from an amateur down in the repeater's "shadow".
+____
+
+National simplex frequencies of other VHF/UHF bands were suggested as alternatives.
+Hams, with ample power, may also monitor on every hour.
+Optionally, hams can also announce their presence, so others have an idea who is around.
+
+In a reminder in the Aug 1995 issue of QST (<<alsup1995, Alsup 1995>>), the times were extended to every three hours from 7 AM to 7 PM.
+
+The latest incarnation on the subject was written by Rick Palm, K1CE in August 2021 (<<palm2021, Palm 2021>>).
+This suggests that the subject is still relevant.
+But Rick also points out https://en.wikipedia.org/wiki/Emergency_locator_beacon[Emergency Locator Beacons] as a valid asset.
+
+So, what about Switzerland?
+Our cell phone coverage is exceptionally dense, and you have a signal even in remote mountainous areas.
+Yet, there are still some blind spots.
+However, I would not place my bet on the Wilderness Protocol.
+To my knowledge, the Wilderness Protocol is not known around here.
+In addition, if you are in an area without cell phone coverage, you are also most likely to be in a location surrounded by mountains.
+VHF does not allow you to reach far, and you would need to climb to higher grounds.
+Up there, you will likely also have cell phone coverage again.
+
+If you feel like you need more security, have a look at those locator beacons.
+The Garmin inReach being a popular choice here.
+You also might want to have a look at the https://www.rega.ch/en/our-missions/sites-and-infrastructure/emergency-radio[Rega Emergency Radio Handheld].
+This still is a VHF radio.
+However, a network of relays is placed strategically placed throughout Switzerland{e}footnote:[the exception being Valais] and is monitored by professionals 24 hours a day, seven days a week.
+
+You should still bring your handheld, though.
+It is our hobby, and we should use every excuse to use our frequency privileges.
+Doing so, away from our home shacks, can provide new challenges and new joys.
+And while you are at that summit, consider to do that https://hb9sota.ch/en/welcome/[Summits on the Air (SOTA)] activation.
+
+[bibliography]
+== Sources
+
+* [[[alsup1994]]] Alsup, William N6XMW. A Wilderness VHF FM Protocol. QST, February 1994, pp. 100.
+* [[[alsup1995]]] Alsup, William N6XMW. Wilderness VHF Protocol Reminder. QST, August 1995, pp. 101.
+* [[[palm2021]]] Palm, Rick K1CE. Wilderness Emergency Communications Protocols. QST, March 2021, pp. 70.
+* Emergency locator beacon, Wikipedia. https://en.wikipedia.org/wiki/Emergency_locator_beacon (accessed: October 24, 2022).
