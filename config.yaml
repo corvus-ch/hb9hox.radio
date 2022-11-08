@@ -16,6 +16,8 @@ params:
       name: qsl@hb9hox.radio
     - id: qrz
       url: https://www.qrz.com/db/HB9HOX
+    - id: mastodon
+      url: https://mastodon.radio/@hb9hox
     - id: github
       name: corvus-ch
   rssAsSocialIcon: true
